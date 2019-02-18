@@ -19,15 +19,22 @@ angular.module('SmartMirror')
 var app = angular.module('SmartMirror');
 app.controller('backimg', function ($scope, $interval) {
 
-  var texts = ['app/img/1.jpg',
-  'app/img/2.jpg',
-  'app/img/3.jpg'];
+  var texts = ['app/img/picture1.jpg',
+  'app/img/picture2.jpg',
+  'app/img/picture3.jpg',
+  'app/img/picture4.jpg',
+  'app/img/picture5.jpg',
+  'app/img/picture6.jpg',
+  'app/img/picture7.jpg',
+  'app/img/picture8.jpg',
+  'app/img/picture9.jpg',
+  'app/img/picture10.jpg'];
     var textIndex = 0;
     var direction = 1; // 1: fade in, 0: fade out
   
     var fadeInLength = 5000; // ms
     var fadeOutLength = 3000; // ms
-    var updateRate = 100; // ms
+    var updateRate = 50; // ms
     var blackoutRate = 2000;
 
     var fadeInIncrement = 1 / (fadeInLength / updateRate);
