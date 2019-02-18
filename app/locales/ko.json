@@ -76,8 +76,8 @@
             "description": "거울이 잠을 잡니다."
         },
         "debug": {
-            "text": "디버그 정보 보여줘",
-            "voice": "디버그 정보 보여줘",
+            "text": "디버그 정보 보여 줘",
+            "voice": "디버그 정보 보여 줘",
             "description": "디버그 정보를 보여줍니다."
         },
         "map_show": {
@@ -221,8 +221,8 @@
             "description": "음성인식된 항목을 TODO리스트에서 제거합니다."
         },
         "subway_show":{
-            "text": "_______ 도착 시간 보여줘",
-            "voice": "*station 도착 시간 보여줘",
+            "text": "_______ 도착 시간 보여 줘",
+            "voice": "*station 도착 시간 보여 줘",
             "description": "지하철역에 도착한 지하철 보여줌" 
         },
         "show_img":{
