@@ -110,11 +110,6 @@
             "voice": "Busca animacion de *img",
             "description": "Busca animacion de algún tema."
         },
-        "image_comic": {
-            "text": "Comic",
-            "voice": "Comic (del dia)",
-            "description": "Muestra el comic del día."
-        },
         "image_comic_dilbert": {
             "text": "Comic Dilbert",
             "voice": "Comic Dilbert",

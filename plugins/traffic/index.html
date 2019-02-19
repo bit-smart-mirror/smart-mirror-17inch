@@ -1,8 +1,9 @@
-<div ng-controller="Traffic">
+<div ng-controller="Traffic" ng-hide="focus == 'all-sleep'">
     <div class="traffic" ng-repeat="traffic in trips" ng-hide="focus == 'img'">
         <div ng-show="!traffic.error" class="traffic-information">
             <span class="time-to" ng-bind="'traffic.time_to' | translate:traffic"></span>
             <span ng-bind="traffic.duration"></span>
         </div>
     </div>
+</div>
 </div>

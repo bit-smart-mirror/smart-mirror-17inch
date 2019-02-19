@@ -125,11 +125,6 @@
             "voice": "giphy *img",
             "description": "Shows a Giphy image."
         },
-        "image_comic": {
-            "text": "Show xkcd",
-            "voice": "Show xkcd",
-            "description": "Shows the most recent xkcd comic."
-        },
         "image_comic_dilbert": {
             "text": "Show Dilbert comic",
             "voice": "Show Dilbert (comic)",

@@ -1,3 +1,4 @@
+<div ng-hide="focus == 'all-sleep'">
 <div class="weather" ng-controller="Weather" ng-hide="focus == 'img'">
     <div class="weather-today">
         <span class="icon dimmed wi {{currentForecast.wi}}"></span>
@@ -22,4 +23,5 @@
     <div style="display: none;" ng-repeat="forecast in weeklyForecast.data" ng-if="$index > 0">
         <span ng-init="iconLoad('icon_weather_'+forecast.counter, forecast.iconAnimation)"></span>
     </div>
+</div>
 </div>

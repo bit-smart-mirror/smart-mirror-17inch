@@ -125,11 +125,6 @@
             "voice": "Mostrar (a) animacao (de)(do) *img",
             "description": "Mostra uma imagem animada."
         },
-        "image_comic": {
-            "text": "Mostrar um cómico do xkcd",
-            "voice": "Mostrar um (comico) (do) xkcd",
-            "description": "Mostra o cómico mais recente do xkcd."
-        },
         "image_comic_dilbert": {
             "text": "Mostrar um cómico do Dilbert",
             "voice": "Mostrar um (comico) (do) Dilbert",

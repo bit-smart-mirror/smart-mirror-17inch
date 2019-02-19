@@ -50,7 +50,6 @@
       <div ng-include="'plugins/remote/index.html'"></div>
       <div ng-include="'plugins/soundcloud/index.html'"></div>
       <div ng-include="'plugins/map/index.html'"></div>
-      <div ng-include="'plugins/xkcd/index.html'"></div>
       <div ng-include="'plugins/dilbert/index.html'"></div>
       <div ng-include="'plugins/commitstrip/index.html'"></div>
       <div ng-include="'plugins/search/index.html'"></div>
@@ -67,7 +66,7 @@
       <div ng-include="'plugins/rss/index.html'"></div>
 
       <div class="error" ng-bind="speechError" ng-show="speechError"></div>
-      <div class="partial-result" ng-bind="partialResult" ng-hide="speechError"></div>
+      <div ng-hide="focus == 'all-sleep'"><div class="partial-result" ng-bind="partialResult" ng-hide="speechError"></div></div>
     </div>
     <div class="bottom-left">
       <div ng-include="'plugins/fitbit/index.html'" ng-if="config.fitbit.creds"></div>
@@ -120,7 +119,6 @@
   <script src="app/js/controller.js"></script>
   <script src="plugins/soundcloud/controller.js"></script>
   <script src="plugins/search/controller.js"></script>
-  <script src="plugins/xkcd/controller.js"></script>
   <script src="plugins/dilbert/controller.js"></script>
   <script src="plugins/commitstrip/controller.js"></script>
   <script src="plugins/map/controller.js"></script>

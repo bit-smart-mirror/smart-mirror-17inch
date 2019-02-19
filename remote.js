@@ -9,6 +9,12 @@ remote.start = function () {
 	const fs = require('fs')
 	const getConfigSchema = require('./remote/config.schema.js')
 
+	var multer = require('multer');
+	var x = 1;
+	//var lth;
+	console.log("start web server");
+
+
 	let config = ""
 	let configDefault = ""
 	let configJSON = ""
@@ -32,6 +38,42 @@ remote.start = function () {
 
 	}
 	getFiles()
+	const static = require('serve-static');
+	const path = require('path');
+	var storage = multer.diskStorage({
+		destination: './app/img',
+		filename: function(req, file, cb) {
+			if(x<11){
+				cb(null, "picture"+x+".jpg");
+				x++;
+			}			
+			else if(x == 11){
+				x = 1;
+				cb(null, "picture"+x+".jpg");
+			}
+			
+		}
+	});
+	
+	// Post files
+	app.post("/upload", multer({
+		storage: storage
+	}).single('upload'), function(req, res) {
+		console.log(req.file);
+		console.log(req.body);
+		res.redirect("/uploads/" + req.file.filename);
+		console.log(req.file.filename);
+		return res.status(200).end();
+	});
+	
+	app.get('/uploads/:upload', function (req, res){
+		var file = req.params.upload;
+		console.log(req.params.upload);
+		var img = fs.readFileSync(__dirname + "/app/img/" + file);
+		res.writeHead(200, {'Content-Type': 'image/jpg' });
+		res.end(img, 'binary');
+	
+	});
 
 	const server = require('http').createServer(app)
 

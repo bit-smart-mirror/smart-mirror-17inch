@@ -61,8 +61,8 @@
             "description": "이전 페이지를 보여줍니다(사용가능한 질문등 넘길 수 있는 페이지에서만 작동합니다.)"
         },
         "list-page": {
-            "text": "_______(으)로 이동",
-            "voice": "*pageNum(으)로 이동",
+            "text": "_______ 페이지로 이동",
+            "voice": "*pageNum 페이지로 이동",
             "description": "지정한 페이지를 이동합니다(사용가능한 질문등 넘길 수 있는 페이지에서만 작동합니다.)"
         },
         "home": {
@@ -71,8 +71,8 @@
             "description": "홈 화면으로 돌아갑니다."
         },
         "sleep": {
-            "text": "잠자러 가",
-            "voice": "잠자러 가",
+            "text": "잠 자러가",
+            "voice": "잠 자러가",
             "description": "거울이 잠을 잡니다."
         },
         "debug": {
@@ -106,8 +106,8 @@
             "description": "지정한 지점으로 확대합니다."
         },
         "map_zoom_reset": {
-            "text": "줌리셋",
-            "voice": "줌리셋",
+            "text": "지도 원래대로",
+            "voice": "지도 원래대로",
             "description": "줌을 해제합니다."
         },
         "video_search": {
@@ -161,8 +161,8 @@
             "description": "음성인식된 시간으로 타이머를 설정합니다."
         },
         "timer_show": {
-            "text": "타이머 보여줘",
-            "voice": "타이머 보여줘",
+            "text": "타이머 보여 줘",
+            "voice": "타이머 보여 줘",
             "description": "설정된 타이머를 보여줍니다"
         },
         "timer_stop": {
@@ -171,8 +171,8 @@
             "description": "설정된 타이머를 멈춥니다."
         },
         "timer_resume": {
-            "text": "타이머 다시시작",
-            "voice": "타이머 다시시작",
+            "text": "타이머 다시 시작",
+            "voice": "타이머 다시 시작",
             "description": "설정된 타이머를 다시 시작합니다."
         },
         "sc_play": {
@@ -195,14 +195,9 @@
             "voice": "(그 곡)다시 플레이 해줘",
             "description": "현재 제생중인 곡은 다시 제생합니다."
         },
-        "light_action": {
-            "text": "_______으로 전등 바꿔줘",
-            "voice": "*action으로 전등 바꿔줘",
-            "description": "음성인식된 색으로 전등 색을 전환합니다."
-        },
         "show_remoteQR":{
-            "text": "원격제어 링크 보여줘",
-            "voice": "원격제어 링크 보여줘",
+            "text": "원격 제어 링크 보여 줘",
+            "voice": "원격 제어 링크 보여 줘",
             "description": "원격제어 링크(IP)나 QR코드를 보여줍니다."
         },
         "todoist_show": {

@@ -113,11 +113,6 @@
             "voice": "(Montre-moi) (Affiche) une image animée de *img",
             "description": "Affiche gif animé."
         },
-        "image_comic": {
-            "text": "(Montre-moi) (Affiche) le dernier xkcd ",
-            "voice": "(Montre-moi) (Affiche) le dernier xkcd",
-            "description": "Affiche le dernier xkcd."
-        },
         "image_comic_dilbert": {
             "text": "(Montre-moi) (Affiche) le dernier Dilbert",
             "voice": "(Montre-moi) (Affiche) le dernier Gilbert",

@@ -89,8 +89,8 @@ const {ipcRenderer} = require('electron');
 
 
 		service.getCommands = function () {
-			for (var i=0; i < Math.ceil(commandList.length/(config.speech.commandsPerPage || 10)); i++) {
-				commandPage.push(commandList.splice(i, i+9))
+			for (var i=0; i < Math.ceil(commandList.length/(config.speech.commandsPerPage || 12)); i++) {
+				commandPage.push(commandList.splice(i, i+11))
 			}
 			return commandPage
 		}
