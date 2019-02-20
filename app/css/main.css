@@ -7,7 +7,6 @@
 body {
     background-color: black;
     color: #fff;
-    font-family: 'HelveticaNeue-UltraLight', 'Open Sans', sans-serif;
     font-weight: 300;
     position: relative;
 }
@@ -34,7 +33,7 @@ dt {
 }
 
 .grey {
-    color: #999;
+    color: #fff;
 }
 
 .first-run h1{
@@ -196,6 +195,7 @@ ul.calendar {
 }
 
 .weather {
+    margin-top: 20px;
     margin-left: auto;
     display: block;
     text-align: right;
@@ -207,8 +207,7 @@ ul.calendar {
 }
 
 .weather-week-descriptor {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 12px;
+    font-size: 18px;
     margin-left: auto;
     margin-bottom: 10px;
     text-align: justify;
@@ -216,7 +215,7 @@ ul.calendar {
 
 .weather-week {
     margin-right: 10px;
-    font-size: 22px;
+    font-size: 35px;
 }
 
 .weather-week .day {
@@ -237,7 +236,7 @@ ul.calendar {
 
 .stock, .tvshows, .hadisplay, .traffic {
     font-family: 'Open Sans', sans-serif;
-    font-size: small;
+    font-size: xx-large;
 }
 
 .fitbit {
@@ -294,7 +293,7 @@ ul.calendar {
 }
 
 .traffic-information, .stock-information, .tv-information {
-    text-align: right;
+    text-align: center;
     margin-top: 10px;
     margin-right: 10px;
 }
@@ -376,7 +375,10 @@ ul.calendar {
 }
 
 .map {
-    height: 1080px;
+    height: 80%;
+    width: 80%;
+    left: 0;
+    bottom: 0;
 }
 
 .reminders-container, .todoist-container {
@@ -411,9 +413,10 @@ ul.calendar {
 }
 
 .video {
-    width: 100%;
-    height: 680px;
+    width: 80%;
+    height: 540px;
     border: none;
+    left: 0px;
     /* If you want to make the video black and white
     -webkit-filter: grayscale(100%);
     filter: grayscale(100%);
@@ -505,9 +508,10 @@ ul.calendar {
 
 .icon {
     position: relative;
-    top: -10px;
+    top: 0px;
     display: inline-block;
-    font-size: 45px;
+    font-size: 60px;
+    color: #fff;
     padding-right: 5px;
     font-weight: 100;
     margin-right: 10px;
@@ -516,7 +520,8 @@ ul.calendar {
 .icon-small {
     position: relative;
     display: inline-block;
-    font-size: 20px;
+    font-size: 30px;
+    color: #fff;
     padding-left: 0px;
     padding-right: -10px;
     font-weight: 100;
@@ -552,4 +557,8 @@ ul.calendar {
     font-family: 'Open Sans', sans-serif;
     font-size: 20px;
     margin-bottom: 55px;
+}
+
+.subway {
+    font-size: 30px;
 }

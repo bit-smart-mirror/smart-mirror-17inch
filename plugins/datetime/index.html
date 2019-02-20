@@ -1,6 +1,10 @@
+<div ng-hide="focus == 'map'">
+<div ng-hide="focus == 'video'">
 <div ng-hide="focus == 'all-sleep'">
-<div class="date grey" ng-hide="focus == 'img'">
-    <span ng-bind="date.format('dddd')"></span>, <span ng-bind="date.format('LL')"></span>
+	<div class="date grey" ng-hide="focus == 'img'">
+    		<span ng-bind="date.format('dddd')"></span>, <span ng-bind="date.format('LL')"></span>
+	</div>
+	<div class="time" ng-bind="date.format('LT')" ng-hide="focus == 'img'"></div>
 </div>
-<div class="time" ng-bind="date.format('LT')" ng-hide="focus == 'img'"></div>
+</div>
 </div>

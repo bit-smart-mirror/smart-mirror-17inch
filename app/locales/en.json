@@ -219,6 +219,16 @@
             "text": "Remove ________ from (my) ________ list",
             "voice": "Remove *element from (my) *project list",
             "description": "Remove item from requested list."
+        },
+        "traffic_show":{
+            "text": "traffic show",
+            "voice": "traffic show",
+            "description": "moving time BTW home to company by driving car"
+        },
+        "traffic_hide":{
+            "text": "traffic hide",
+            "voice": "traffic hide",
+            "description": "hide traffic infomation"
         }
     },
     "fitbit": {

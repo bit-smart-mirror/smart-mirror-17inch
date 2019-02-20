@@ -3,7 +3,7 @@
         "commands" : "\"사용가능한 질문\" 이라고 말해보세요.."
     },
     "traffic" : {
-        "time_to" : "Time to {{name}}: "
+        "time_to" : "운전 예상 시간 {{name}}: "
     },
     "reminders": {
         "empty": "리스트가 비었습니다."
@@ -229,6 +229,16 @@
             "text": "사진 기능 취소",
             "voice": "사진 기능 취소",
             "description": "갤러리 기능 취소"
+        },
+        "traffic_show":{
+            "text": "이동 예상 시간",
+            "voice": "이동 예상 시간",
+            "description": "차량으로 이동 시 예상 시간"
+        },
+        "traffic_hide":{
+            "text": "이동 예상 시간 취소",
+            "voice": "이동 예상 시간 취소",
+            "description": "이동 예상 시간 취소"
         }
     },
     "fitbit": {

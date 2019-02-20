@@ -1,4 +1,4 @@
-function Traffic($scope, $http, $interval, $q, TimeboxService) {
+function Traffic($scope, $http, $interval, $q, TimeboxService, SpeechService, Focus) {
 	var BING_MAPS = "http://dev.virtualearth.net/REST/V1/Routes/";
 	var language = (typeof config.general.language !== 'undefined') ? config.general.language.substr(0, 2) : "en"
 	var durationHumanizer = require('humanize-duration').humanizer({
@@ -86,6 +86,13 @@ function Traffic($scope, $http, $interval, $q, TimeboxService) {
 			$scope.traffic = { error: error };
 		});
 	}
+    // Show traffic
+	SpeechService.addCommand('traffic_show', function () {
+		Focus.change("traffic");
+	});
+	SpeechService.addCommand('traffic_hide', function () {
+		Focus.change("default");
+	});
 
 	refreshTrafficData()
 	$interval(refreshTrafficData, config.traffic.refreshInterval * 60000 || 900000)
