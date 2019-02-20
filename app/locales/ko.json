@@ -1,6 +1,6 @@
 {
     "home" : {
-        "commands" : "\"사용가능한 질문\" 이라고 말해보세요.."
+        "commands" : "\"Smart Mirror 후 사용 가능한 질문\" 이라고 말해보세요.."
     },
     "traffic" : {
         "time_to" : "운전 예상 시간 {{name}}: "
