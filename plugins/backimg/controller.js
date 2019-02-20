@@ -39,7 +39,7 @@ var updateRate = 30; // ms
 var blackoutRate = 2000;
 
 var fadeInIncrement = 5 / 300;
-var fadeOutDecrement = 5 / 1000;
+var fadeOutDecrement = 5 / 500;
 
 $scope.text = texts[textIndex];
 $scope.opacity = 0;
@@ -50,13 +50,13 @@ var fader = $interval(function () {
       $scope.$apply(function () {
         $scope.opacity = $scope.opacity + fadeInIncrement;
       });
-    }, 600);
+    }, 100);
   } else {
     setTimeout(function () {
       $scope.$apply(function () {
         $scope.opacity = $scope.opacity - fadeOutDecrement;
       });
-    },3000);
+    },6000);
   }
   if (direction === 1 && $scope.opacity >= 1) {
     direction = 0;

@@ -381,6 +381,12 @@ ul.calendar {
     bottom: 0;
 }
 
+.back {
+    height: 80%;
+    width: 80%;
+    float:left;
+}
+
 .reminders-container, .todoist-container {
     width: 250px;
     text-align: left;
